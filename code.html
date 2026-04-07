@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Gaurav's Dental Clinic | Premier Dental Care Gurugram</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#191c1e",
+                    "on-tertiary-fixed-variant": "#733512",
+                    "surface": "#f7f9fb",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#8b4823",
+                    "on-primary-container": "#e3fffe",
+                    "on-secondary-container": "#56656e",
+                    "secondary": "#526069",
+                    "outline": "#6e7979",
+                    "primary-container": "#008080",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-primary-fixed-variant": "#004f4f",
+                    "surface-tint": "#006a6a",
+                    "outline-variant": "#bdc9c8",
+                    "on-secondary-fixed": "#002020",
+                    "on-tertiary-container": "#fff9f7",
+                    "background": "#f7f9fb",
+                    "on-background": "#191c1e",
+                    "on-secondary-fixed-variant": "#3b4951",
+                    "secondary-fixed-dim": "#bac9d3",
+                    "on-surface-variant": "#3e4949",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#002020",
+                    "surface-variant": "#e0e3e5",
+                    "on-tertiary-fixed": "#341100",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#93f2f2",
+                    "secondary-fixed": "#d6e5ef",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#d8dadc",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-container": "#a96039",
+                    "tertiary-fixed-dim": "#ffb692",
+                    "surface-container": "#eceef0",
+                    "error-container": "#ffdad6",
+                    "primary": "#006565",
+                    "surface-container-high": "#e6e8ea",
+                    "primary-fixed-dim": "#76d6d5",
+                    "inverse-primary": "#76d6d5",
+                    "surface-container-low": "#f2f4f6",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdbcb",
+                    "surface-bright": "#f7f9fb",
+                    "secondary-container": "#d3e2ed"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-effect bg-white/80 dark:bg-slate-900/80 shadow-[0px_24px_48px_rgba(0,106,106,0.06)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-[#006565] dark:text-[#008080] tracking-tighter font-headline">
+                Dr. Gaurav's Dental Clinic
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#006565] dark:text-[#008080] border-b-2 border-[#006565] pb-1 font-headline font-semibold tracking-tight text-sm transition-all duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006565] font-headline font-semibold tracking-tight text-sm transition-all duration-300" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006565] font-headline font-semibold tracking-tight text-sm transition-all duration-300" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006565] font-headline font-semibold tracking-tight text-sm transition-all duration-300" href="#">Gallery</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006565] font-headline font-semibold tracking-tight text-sm transition-all duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-on-secondary-container bg-secondary-container px-5 py-2.5 rounded-xl font-headline font-semibold text-sm transition-all duration-300 hover:opacity-80 scale-95 duration-200">
+                    Call Now
+                </button>
+<button class="bg-gradient-to-r from-[#006565] to-[#008080] text-white px-5 py-2.5 rounded-xl font-headline font-semibold text-sm transition-all duration-300 hover:opacity-80 scale-95 duration-200">
+                    WhatsApp
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-20" data-alt="high-end modern dental clinic interior with soft ambient lighting, clean white surfaces, and professional medical equipment in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTlCqK12626LiDlXLkVh6JLJA8-eJg8Yj1LmyCUdeBSRKaSb5MBeNtWCkRI9B8zN5K241qnlhgdLfHn2ONafJGc43rGysFkmUckAxjVEPP5CfGXlm8I_b17Cqkkd_9Rg6jew6I9ZACgVJ8G8YWtMimSKpc9xRUtik6o3oX0Cuji_BGP0s-gE74CRCZSIDmGCRc_k8cD2qJAh3XBtv06PnUmUn6jqbQ9a4fSzCk1BAjpuZQ5UrCb-5pIRqdCsaWbUTQMvmvO3Pos9c"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+                        Advanced Clinical Care
+                    </div>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-on-surface tracking-tight leading-[1.1]">
+                        Your Trusted <br/>
+<span class="text-primary">Dental Care</span> <br/>
+                        in Gurugram
+                    </h1>
+<p class="text-body-lg text-on-surface-variant max-w-md leading-relaxed text-lg">
+                        Advanced, Painless &amp; Affordable Dental Treatments tailored to your smile. Experience dentistry redefined with Dr. Gaurav.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold text-lg shadow-lg hover:translate-y-[-2px] transition-all">
+                            Book Appointment
+                        </button>
+<button class="px-8 py-4 bg-surface-container-lowest text-primary border border-outline-variant/30 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-all">
+                            View Services
+                        </button>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl rotate-2 relative z-10 border-[12px] border-white">
+<img alt="" class="w-full h-full object-cover" data-alt="portrait of a happy person with a brilliant healthy smile in a bright sunlit setting reflecting confidence and wellness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO11Vvdn1tKbnBEUSF4k-CUpShuZUcxX6SEr_aTJI-QYOrChq5a5P7G4mXhjIblVduZ0dX3jo539ASMnG94c26ugsCTO_DQ8MPE7vA_mnfAtpPkWbpEmU2764CLBs85kQ5tGjyhvsvqPnzZrzV5cmzle2wGU49-qYkOyCTCl0NU5l0RiiURWL45xUULtSaQEXhne7qLCqPGp31LeAjpw1c6sdPStCOLfdexr11JTF79cQoHutPylI_6zmRaxW8zv64tVa3nNbj2RE"/>
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary/5 rounded-full blur-2xl"></div>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-wrap justify-center md:justify-between gap-8 opacity-70">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="sanitizer">sanitizer</span>
+<span class="font-headline font-bold text-on-surface-variant">Sterilized Equipment</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="workspace_premium">workspace_premium</span>
+<span class="font-headline font-bold text-on-surface-variant">Certified Dentist</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+<span class="font-headline font-bold text-on-surface-variant">Painless Treatment</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-headline font-bold text-on-surface-variant">100% Hygiene</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-tertiary font-headline font-bold headline-sm mb-4">Our Specializations</h2>
+<h3 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-on-surface">
+                            Comprehensive Dental <span class="text-primary">Services</span>
+</h3>
+</div>
+<p class="text-on-surface-variant max-w-sm mb-2">
+                        We use the latest technology to ensure your dental procedures are as comfortable and efficient as possible.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="group p-8 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all duration-300">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:rotate-[4deg] transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="cleaning_services">cleaning_services</span>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Teeth Cleaning</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Professional scaling and polishing to keep your gums healthy and breath fresh.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            LEARN MORE <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group p-8 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all duration-300">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:rotate-[4deg] transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="dentistry">dentistry</span>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Dental Implants</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">High-quality, long-lasting implants that look and feel like natural teeth.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            LEARN MORE <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group p-8 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all duration-300">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:rotate-[4deg] transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="medical_services">medical_services</span>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Root Canal</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Painless root canal therapy to save your natural tooth from extraction.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            LEARN MORE <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="group p-8 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:bg-surface-container-high transition-all duration-300">
+<div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:rotate-[4deg] transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="grid_view">grid_view</span>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Braces</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Orthodontic solutions including invisible aligners for a perfect smile alignment.</p>
+<a class="text-primary font-bold text-xs flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
+                            LEARN MORE <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="" class="w-full h-full object-cover" data-alt="close-up of advanced dental imaging technology and high-tech surgical tools in a sterile clinic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhD8qNf9bCU4kzzqMS2vyuB9xjsIUibBojFfG2fmb-knbI6qbZFG8nUBRY2t6HWq2CyB7nQS9h0Ull8ML8eqdNTbWaS6eEPOLi4a0qpzFXImQB5OjMu-EvpOOhcWT4RuZ4SuupsEJ2v5s4Iur7M5qn0GXpRiiHo9l8v471c1dwgdAuKkC_-LVBzD9l1i1Ok5KA0MfF_5HrYFU8P4TEZzSyykwVsXTT9lxmsmRdzv0DC8_kpVviU4aWsDwVIucLMqIMVH4uRDB3m1A"/>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-square">
+<img alt="" class="w-full h-full object-cover" data-alt="professional dentist wearing protective gear focusing on a procedure with gentle and precise movements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDorN-RormLD5YZ82f-5dthHLj2OsY-BLMuIEQKroGCHFGkPSiXEyZ3EFBXF7o2ci5nObPT0fB1tUJ6TE9iSoIU2JObXTM60TJyumzeX9lnnec18hdqY5dumNeZW7DD-CmD5se7u3rYSc05sbWxPasoumABWDYxRhfaPQtCE82Oh5uDU0W_maNMf1EnphTl0ddhvdQPhZxWnnUgWbJ85cxZWp64L62n_L7JX-iZeVLFBBhPjzx_bpdyKcRUcs6XsYTgjMo5PkXwSFE"/>
+</div>
+</div>
+<div class="pt-12 space-y-4">
+<div class="rounded-2xl overflow-hidden aspect-square">
+<img alt="" class="w-full h-full object-cover" data-alt="modern dental clinic reception area with elegant furniture and a calming atmosphere for patients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfEKZNLbDk-EqZnJ9LKsx26o5oD6pBTBgQjfJN0TkWktJ1_8llqnU53vfeaRyZUcDUWezfsQYspQKRFChYYNFpYSDjxnCfhPYycC5GBVU834NYYQu47s_vetqpy8Fpyp-RFIOnQ2ihG-qFwrHb3bUUFRDZF8GtaqyouFaxIQ6BvC-6qvqTiLbjEephqtwqz7G7Q6mh1nn9MnH5-dxDUSYXZ-DzgVgI-UhcoPhw9VM8SwTz19r-7yGQdGrKkmxPgpyOWo4m2UyoPQg"/>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="" class="w-full h-full object-cover" data-alt="patient smiling while talking to a dental professional in a bright friendly consultation room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1DNrCOL1ioUfOslWqmppOhMXM2BXqYuOQUQ4B3vDAXI7zjPbHGpX-F3VplZnuL5WgnBa39yBA7PSlGZUxNJ7OQocvuSwknjE9wu-w0IiNKpejVGqibLMAY6ms4v3_GYBrvq-H91iVqJhj9imSAF0V0toTuKWgd2Z9hfN6rGgKK0bgGqkgreF2dqehSf0AdL_9eubsQewtqYQ2t87zYJ28hAWB5r9lClGKb0tgXkwUYGPo28XLGyTAUcULWhdINVyfiRaVkxVGZg4"/>
+</div>
+</div>
+</div>
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 rounded-full blur-[100px]"></div>
+</div>
+<div class="space-y-10">
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-on-surface leading-tight">
+                                Why Choose Our <br/><span class="text-primary">Medical Excellence</span>
+</h2>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+</div>
+<div>
+<h5 class="text-xl font-headline font-bold mb-2">Years of Experience</h5>
+<p class="text-on-surface-variant leading-relaxed">Dr. Gaurav has handled thousands of complex dental cases with high success rates.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div>
+<h5 class="text-xl font-headline font-bold mb-2">Modern Equipment</h5>
+<p class="text-on-surface-variant leading-relaxed">Equipped with digital X-rays and advanced tools for painless and accurate diagnosis.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<div>
+<h5 class="text-xl font-headline font-bold mb-2">Patient-First Care</h5>
+<p class="text-on-surface-variant leading-relaxed">We prioritize your comfort and anxiety-free experience above everything else.</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-primary rounded-3xl text-white flex justify-between items-center shadow-xl">
+<div>
+<p class="text-4xl font-headline font-extrabold">15k+</p>
+<p class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Happy Patients</p>
+</div>
+<div class="w-[1px] h-12 bg-white/20"></div>
+<div>
+<p class="text-4xl font-headline font-extrabold">10+</p>
+<p class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Years Practice</p>
+</div>
+<div class="w-[1px] h-12 bg-white/20"></div>
+<div>
+<p class="text-4xl font-headline font-extrabold">4.9</p>
+<p class="text-primary-fixed-dim text-sm font-bold uppercase tracking-widest">Google Rating</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials (Editorial Layout) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-4">Patient Experiences</h2>
+<p class="text-on-surface-variant">Real stories from people who transformed their smiles at our clinic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-low p-10 rounded-[2rem] relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-8" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="flex text-tertiary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic leading-relaxed text-lg mb-8">"Dr. Gaurav is amazing! I was terrified of root canals, but he made the whole process completely painless. Highly recommended!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-300">
+<img alt="" class="w-full h-full object-cover" data-alt="friendly middle-aged man smiling warmly at the camera, clean professional look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDowmg4H-iXWWJxrCzBE2LPhtlopBKONGiXlv2Wb5huT4QJIDcksRTt0fNmmZ6rgGL_SNs5zGEVm8ZEbnN4SJG1P7cuipnYM0j6BnCdjhlnPsTJz9at4aWJf_v2qkYs1r0lKldgkJO2wGrbmVY7MNqKmLj28i0ATzSOj14M5Q_gDcgszhNkKgg2Eo_IGt_3_jfxanoFRRKdCjvsqcQyrJP6eXATranepNRIcAg5pMgxPugXbwaQMYfKtLlRJlkOly6u8FO7cYaqPGI"/>
+</div>
+<div>
+<p class="font-headline font-bold">Amit Sharma</p>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Gurugram Resident</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-primary p-10 rounded-[2rem] relative text-white translate-y-[-10px]">
+<span class="material-symbols-outlined text-white/20 text-6xl absolute top-6 right-8" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="flex text-tertiary-fixed mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-white italic leading-relaxed text-lg mb-8">"The clinic is super clean and the staff is very polite. The dental implants I got feel just like my original teeth. Best experience ever!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-white/20">
+<img alt="" class="w-full h-full object-cover" data-alt="professional young woman smiling gracefully with natural skin texture and happy expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSXUMwwsjjKwJgNcmdki7L9OkSi_oByJUC0WZAxNs3vs8_fyaChnQmHSNmcf8PxU64qhC9d63LSilsMQYkqo_xCieSsYsnW4uUvrK4ed9sZMyKEEQqpVblRvrckXOhQoFJf-Y_env28pXNAgi9Qc7ovgX9cg8848vHqSeR-eAyI_xdEMAzEDvGIxfr9zVcmH6FtqaJxhc6etCb-7gnxEa4iz5uj4pLj9286qU_S6MeePpNPjAVaRanp-wWZHx3u_WixOuXICwXr88"/>
+</div>
+<div>
+<p class="font-headline font-bold">Priya Verma</p>
+<p class="text-primary-fixed-dim text-xs font-bold uppercase tracking-widest">Entrepreneur</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-low p-10 rounded-[2rem] relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-8" data-icon="format_quote" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="flex text-tertiary mb-6">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic leading-relaxed text-lg mb-8">"Exceptional hygiene standards. I was worried about visiting a dentist post-covid but Dr. Gaurav's clinic follows all safety protocols perfectly."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-300">
+<img alt="" class="w-full h-full object-cover" data-alt="elderly gentleman with a confident and satisfied smile, wearing professional casual attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_DKJLeNL1rBwjS33NY7C8fK96kUiVwIiBeMmunLbdPdWfmny-aW675DC0ojhyVxPvMmj7bgs_bTccAWtJ49xcqLImyXefU-RYxoBHObZaNmkvxQRERR4bqOcNIgq9TkLfhkECbpSmOtdJsEvdeWwUJYcDmWX2t4g5N1WA1j4PMN-72Q70wDE3M_yZISSdtdSO4Si7IWl3jpPGU3xozXzEyJR6z8NQUSOtHV7DMVj_ah79u8KapXgYp-T6IN8v1zptwj3JqdvxWbE"/>
+</div>
+<div>
+<p class="font-headline font-bold">Rakesh Gupta</p>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Retired Officer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clinic Gallery (Bento Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight">Our Clinic Space</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden shadow-lg">
+<img alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="wide shot of a modern clean dental operatory with ergonomic blue chair and state-of-the-art equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhs3FaPiQ0LAwWHcdvWkbRn8IU5TQ1iRBSfieobxm7CBgA14drQRbPfjVZtDuZNHuTB5bh3fc5IEe0HtB7v8QOJ61klMOsLXylhUoafu8QzMOT1Rv_jXCB00xTaMNbo0vHo2UmZDxeCEOzzerKeusYP81PTiz2IkwGPxhjd5VYbFdte3RGIhMrydI2Zjz1QbU17G2S08qNZHh1eNpxugoATMytVZLw6EGATFi7fFbo0KJaS65IZuMfEJ3UbqNGzx4PgcpzWiRtdw8"/>
+</div>
+<div class="md:col-span-1 rounded-3xl overflow-hidden shadow-lg">
+<img alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="interior view of dental clinic reception lounge with comfortable seating and minimalist decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi0So6uSPkWH_HOufmens8Hl5hsOyfYyMS1mms1hw8CzfYT4Y_w1EA_WbKifl74xd1LraVpTOtfK1ASvDL0rWPvgD1wCpz8_CdsGvB1tK56ChvC38JmMh1iNYm9g48RpyoluyFrDD-Dh9GR7LjJhHveYo6o_TVYy3AgOFK3-SoQ1yvABZoD_MxsLSo2_owqdGTc-M9TbhJ_Vk-SUiqp8ZFNhUUiGMxaEbo858gKvD_nrb6Yb36WPy3M64Fpxb-K4dT_JJl4hnLpuw"/>
+</div>
+<div class="md:col-span-1 rounded-3xl overflow-hidden shadow-lg">
+<img alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="close up of sterilized dental instruments arranged neatly on a clean stainless steel tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3MECu78TkAg5dVMWcSdIIMznBo517rExG5I5oTYMXPKUIOdfDVYHG6t4phPjKuLRJfO2PdJcBLaz-ljacOWlzV3BOh_v_kTMhOa_Ja2cW91K6BQf5b6ltavVov9o1peith00L6h8OHGG8FmYzmKF08EDg5pFyW_i6IswrZ8z1B5fzT3IdyhFOPxDfqlOYxVGGBB1IwYB8xKjq1WslQ0v92AjtBWCQAWRktuRWgTAldydDmzwDLKSjrkKOAC6p83XKFfHbxmpPfUA"/>
+</div>
+<div class="md:col-span-2 rounded-3xl overflow-hidden shadow-lg">
+<img alt="" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="entrance of Dr Gaurav's Dental Clinic with professional signage and bright welcoming appearance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6kHwCgA3rGCPTNXdb7QZAAwib3hGv1m1B6pzC8wCWC626KJdPrBk2NfQbERPVQATXVNtzti0urWPBaHjhBUlynMRArtpnbr9BJVgHfjd5sSHzDHYf6o_uxcvNDeu858x4axJkO56u3LIpzvY227PEBnI90CSkO1iVJ89U1cqFaT9Jhw1FLiO-nG-xSzNDONFln1Y3sZRZuxq_k0OFhDXRc2Rg347y5JcFgFSqW9AQYeiUpAP8UoF7g-y-1JiKfR5x9q18C0mq_ZM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-12">
+<div class="bg-white p-10 rounded-[2.5rem] shadow-[0px_24px_48px_rgba(0,106,106,0.06)] border border-outline-variant/20">
+<h3 class="text-3xl font-headline font-extrabold mb-8">Get In Touch</h3>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-xl">
+<label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Your Name</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface" placeholder="John Doe" type="text"/>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Phone Number</label>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface" placeholder="+91 0000000000" type="tel"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Select Service</label>
+<select class="w-full bg-transparent border-none focus:ring-0 text-on-surface">
+<option>General Checkup</option>
+<option>Root Canal</option>
+<option>Implant</option>
+<option>Braces</option>
+</select>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl">
+<label class="block text-xs font-bold uppercase text-on-surface-variant mb-1">Your Message</label>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-on-surface resize-none" placeholder="How can we help?" rows="3"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary-container transition-all shadow-lg shadow-primary/20">Send Inquiry</button>
+</form>
+</div>
+<div class="flex flex-col gap-8">
+<div class="flex-1 rounded-[2.5rem] overflow-hidden shadow-xl border border-outline-variant/10">
+<div class="h-full w-full bg-slate-200" data-location="Gurugram, Sector 7" style="">
+<!-- Placeholder for Map -->
+<div class="w-full h-full flex flex-col items-center justify-center bg-slate-100 text-on-surface-variant gap-4">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-headline font-bold">Sector 7, Gurugram, Haryana</p>
+<button class="px-6 py-2 bg-white text-primary rounded-full shadow-sm font-bold text-sm">Open in Google Maps</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-[2rem] grid grid-cols-2 gap-4">
+<div>
+<p class="text-xs font-bold uppercase text-on-surface-variant mb-2">Email Us</p>
+<p class="font-headline font-bold">care@drgauravdental.com</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase text-on-surface-variant mb-2">Call Support</p>
+<p class="font-headline font-bold">7988123934</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-slate-50 dark:bg-slate-950 font-body text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-[#006565] dark:text-[#008080] mb-4">Dr. Gaurav's Dental Clinic</div>
+<p class="text-slate-500 max-w-xs">Providing superior dental care with a focus on hygiene, patient comfort, and clinical excellence in the heart of Gurugram.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Home</a></li>
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">About Us</a></li>
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Services</a></li>
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Contact</a></li>
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-[#006565] transition-transform hover:translate-x-1 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-4">Newsletter</h4>
+<p class="text-slate-500 mb-4">Subscribe for oral health tips.</p>
+<div class="flex gap-2">
+<input class="bg-white border-none rounded-lg flex-1 text-xs" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200">
+<p class="text-slate-500 text-center md:text-left">© 2024 Dr. Gaurav's Dental Clinic. House No 322, 28, Street No. 7, Jyoti Park, Sector 7, Gurugram, Haryana 122001 | Phone: 7988123934</p>
+</div>
+</footer>
+<!-- SideNavBar (Floating WhatsApp FAB) -->
+<div class="fixed bottom-8 right-8 z-[100] rounded-full">
+<a class="bg-gradient-to-br from-[#006565] to-[#008080] p-5 rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 transition-transform animate-pulse group" href="https://wa.me/917988123934" target="_blank">
+<span class="material-symbols-outlined text-3xl" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="absolute right-full mr-4 bg-white text-primary font-bold px-4 py-2 rounded-xl whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Chat with Dr. Gaurav</span>
+</a>
+</div>
+</body></html>
