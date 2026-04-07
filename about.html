@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface-variant": "#424752",
+                    "on-primary-fixed": "#001a40",
+                    "secondary-container": "#bfd2fd",
+                    "tertiary-fixed-dim": "#a2cfcb",
+                    "on-primary-container": "#bbd0ff",
+                    "inverse-primary": "#acc7ff",
+                    "secondary-fixed": "#d7e2ff",
+                    "on-primary": "#ffffff",
+                    "outline": "#727784",
+                    "tertiary-fixed": "#beebe7",
+                    "surface-container": "#eceef0",
+                    "on-background": "#191c1e",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "on-tertiary-fixed": "#00201e",
+                    "primary-container": "#0056b3",
+                    "secondary-fixed-dim": "#b3c7f1",
+                    "on-primary-fixed-variant": "#004491",
+                    "primary-fixed": "#d7e2ff",
+                    "primary-fixed-dim": "#acc7ff",
+                    "surface-dim": "#d8dadc",
+                    "outline-variant": "#c2c6d4",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "background": "#f7f9fb",
+                    "on-secondary-fixed": "#041b3c",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#35605d",
+                    "error": "#ba1a1a",
+                    "secondary": "#4c5e84",
+                    "surface-bright": "#f7f9fb",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#1c4846",
+                    "on-tertiary-fixed-variant": "#224e4b",
+                    "on-tertiary-container": "#acd8d5",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary": "#003f87",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-secondary-container": "#475a7f",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface": "#191c1e",
+                    "on-secondary-fixed-variant": "#34476a",
+                    "surface-tint": "#115cb9",
+                    "inverse-surface": "#2d3133"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm shadow-blue-900/5 transition-all">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-blue-900 dark:text-blue-100 font-headline">Magical 32</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-gap-8 gap-8 font-headline font-medium tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors duration-300" href="index.html">Home</a>
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600 transition-colors duration-300" href="about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors duration-300" href="services.html">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors duration-300" href="gallery.html">Gallery</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm scale-95 active:opacity-80 transition-all">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-24 overflow-hidden">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-24">
+<div class="editorial-grid gap-8 items-center">
+<div class="col-span-12 md:col-span-7">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-headline font-bold text-xs uppercase tracking-widest mb-6">Established since 2012</span>
+<h1 class="text-display-lg font-headline font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tight">
+                        Redefining the <span class="text-primary italic">Dental Experience</span> in Gurugram.
+                    </h1>
+<p class="text-body-lg text-on-surface-variant leading-relaxed max-w-xl mb-10">
+                        At Magical 32, we treat every smile as a unique masterpiece. Located in the heart of Gurugram, our clinic blends surgical precision with a calming, ethereal atmosphere to ensure your journey to oral health is as restorative as it is transformative.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-3 px-5 py-3 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+<span class="font-headline font-bold text-sm">Hygiene Excellence</span>
+</div>
+<div class="flex items-center gap-3 px-5 py-3 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="biotech">biotech</span>
+<span class="font-headline font-bold text-sm">Modern Tech</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl shadow-primary/10">
+<img class="w-full h-full object-cover" data-alt="Ultra-modern dental clinic interior with minimalist white furniture, soft blue ambient lighting, and high-tech equipment in a serene setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZw9F4LYDtd9WO7OfSX55UlVg005coAoQJAHCmYhSL0Dt1dHja4gjVMJR1C60485F2dilkO2xcup-rqCvAtM1HpuFp3h4gCA41GetgoJh44K-ns4sbfQAQJyWZK2tRIEdfBYQEeEEhYTA9Eafs9lCrhAB9HIX9aAdNG5Gw0RF4z8wQi9JCbqmQPmZe205YWh1Euo0feGf2QP_ybLQv2OW3qT6Gpc_CkABvwRmRMzdsiTzPgyiC_ulzQQHgz6DMK0ytC18YbF7PY5I"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 rounded-2xl shadow-xl shadow-primary/5 max-w-[200px]">
+<p class="text-primary font-headline font-extrabold text-3xl">12k+</p>
+<p class="text-label-md text-on-surface-variant">Smiles transformed with our specialized care.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Tonal Layering -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16 items-start">
+<div class="space-y-12">
+<div class="p-8 bg-surface-container-lowest rounded-[2rem] shadow-sm">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h2 class="text-headline-md font-headline font-bold text-primary mb-4">Our Mission</h2>
+<p class="text-body-lg leading-relaxed text-on-surface-variant">
+                                To provide accessible, world-class dental care by integrating painless procedures with cutting-edge technology, ensuring every patient in Gurugram can achieve a healthy, confident smile without fear or anxiety.
+                            </p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-[2rem] shadow-sm md:translate-x-12">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-fixed" data-icon="visibility">visibility</span>
+</div>
+<h2 class="text-headline-md font-headline font-bold text-tertiary mb-4">Our Vision</h2>
+<p class="text-body-lg leading-relaxed text-on-surface-variant">
+                                To be the gold standard of holistic dentistry, where innovation meets empathy. We envision a future where 'Magical 32' is synonymous with a stress-free, luxury healthcare experience that prioritizes patient comfort above all else.
+                            </p>
+</div>
+</div>
+<div class="flex flex-col h-full justify-center">
+<h3 class="text-headline-md font-headline font-extrabold text-on-surface mb-6">The Pillars of Our Trust</h3>
+<div class="space-y-6">
+<div class="flex gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary shrink-0" data-icon="clean_hands" data-weight="fill" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+<div>
+<h4 class="font-headline font-bold">Uncompromising Hygiene</h4>
+<p class="text-sm text-on-surface-variant">Multi-step sterilization protocols surpassing international standards.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary shrink-0" data-icon="psychology" data-weight="fill" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<div>
+<h4 class="font-headline font-bold">Painless Philosophy</h4>
+<p class="text-sm text-on-surface-variant">Advanced sedation and gentle techniques for a trauma-free visit.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary shrink-0" data-icon="devices" data-weight="fill" style="font-variation-settings: 'FILL' 1;">devices</span>
+<div>
+<h4 class="font-headline font-bold">Modern Dental Technology</h4>
+<p class="text-sm text-on-surface-variant">Digital X-rays and intraoral cameras for precise, transparent diagnosis.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dental Expertise: Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="mb-16">
+<h2 class="text-display-lg font-headline font-extrabold text-on-surface mb-4">Dental Care Experts</h2>
+<p class="text-body-lg text-on-surface-variant">Guided by specialists who blend scientific rigor with artistic precision.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Specialist -->
+<div class="md:col-span-2 bg-primary rounded-[2.5rem] overflow-hidden text-white flex flex-col md:flex-row relative">
+<div class="p-10 flex-1 z-10">
+<span class="text-primary-fixed-dim font-headline font-bold text-xs tracking-widest uppercase">Senior Orthodontist</span>
+<h3 class="text-3xl font-headline font-extrabold mt-4 mb-6">Dr. Aarav Sharma</h3>
+<p class="text-primary-fixed-dim leading-relaxed mb-8">
+                            With over 15 years of experience in aesthetic reconstruction, Dr. Sharma leads our clinical team with a focus on minimally invasive procedures.
+                        </p>
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" data-icon="school">school</span>
+<span>MDS, Orthodontics &amp; Dentofacial Orthopaedics</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" data-icon="reward">rewarded_ads</span>
+<span>Excellence in Dentistry Award 2021</span>
+</div>
+</div>
+</div>
+<div class="flex-1 min-h-[300px] relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Professional portrait of a male Indian dentist in a clean white coat smiling warmly in a bright modern medical office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUk_5q6ncUolazYYmr7lBzf9ktitgTzv_LDkfIIP-p991Mr6whzZ4kFU0BuAZ0Tt3jST_7fW3kp4U2WaM-VsFw15M562GIWBWjisRRa8VqElN3VnDiViZkh4KDEVaZk9cdU7d0uhSqt6gjEfJtkwQ2LoOxyS3wTMp9AByWKr1UKicj8c6moLQzmb0oDgnrLjmba5EsaKQq2zM6JWntxfFpn74CBys974IHqE9UiEpITw6nksFGdpWCOYidRvFjpKzL8FAtVqULnk"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent md:block hidden"></div>
+</div>
+</div>
+<!-- Second Specialist -->
+<div class="bg-surface-container-highest rounded-[2.5rem] p-8 flex flex-col justify-between overflow-hidden relative">
+<div>
+<div class="w-16 h-16 rounded-full overflow-hidden mb-6 border-4 border-white">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a professional female dentist with a compassionate smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs0EyFvd55mizI4N9kyjHNdAf9MS7g5Oef01GKo7HDY71wBBtClZ1UHG4GQR2WnoLF7aCpkeYd5zlPq4rAVEw4MBHwiH87NNZJk6Kk1C3Rf5uyLPGOA880X6a89EufoCgxHP2yOgTQN1gX2yr6AVPll-_epULrytY03rqlsyYXBhSjnx7Cbc0GfmMI1mlG6HZpd68-WZU051fUqsOFDrOFYS3ntR1-nZ3Ej0MZt0JlX_5K3jS-c3Ub5mE-mhyetgJOI7AYvi9qN_Q"/>
+</div>
+<h3 class="text-xl font-headline font-extrabold mb-2">Dr. Ishita Kapur</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Specializing in pediatric care and patient comfort management.
+                        </p>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<span class="text-xs font-headline font-bold uppercase tracking-tighter opacity-60">Pediatric Expert</span>
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Modern Tech Card -->
+<div class="bg-tertiary-fixed rounded-[2.5rem] p-10 md:col-span-1 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-5xl text-tertiary mb-6" data-icon="biotech">biotech</span>
+<h3 class="text-xl font-headline font-extrabold text-on-tertiary-fixed mb-4">Advanced Diagnostics</h3>
+<p class="text-sm text-on-tertiary-fixed-variant">Utilizing digital intraoral scanning and low-radiation 3D imaging for pinpoint accuracy.</p>
+</div>
+<!-- Clinic Story Card -->
+<div class="bg-secondary-container rounded-[2.5rem] p-10 md:col-span-2 flex items-center gap-10">
+<div class="hidden md:block w-48 h-48 rounded-2xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Black and white nostalgic photo of a clinic's founding team contrasted with modern high-tech clinical tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN2pbIl2FfxrhNhUpMVoMSdrvE4WRcqsvjRZ0y1Z7jEN06UDzMvdty2ZDa1VezMZ6xH6ep-q99xoxiBKC7kJKvVJMrC54vpSgwDW5yuEFS0Ka3JYtaykJ4W3vJa2mF05-Gtg1EDV3qkGbANF49TWwKjM72aq4YU26LhGzynw9gcz_yP5SHnm8ExX4XZYokiEGxhMMBX3bcZNNKCfgyaekcQFgrP28s1oylBlzCgWmdf5DzlQK3Cm-qPzPXJW_y4CxHbCxfJR8tc4Q"/>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-extrabold text-on-secondary-container mb-3">Our Gurugram Legacy</h3>
+<p class="text-on-secondary-container/80 leading-relaxed">
+                            From a small single-chair clinic to Gurugram's most trusted name in dental health, our journey has been defined by one thing: The trust of our community.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hygiene Standard Showcase -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -skew-y-3 origin-right"></div>
+<div class="max-w-7xl mx-auto px-6 relative">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1">
+<h2 class="text-headline-md font-headline font-extrabold mb-8">Clinical Serenity &amp; Safety</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="medical_services">medical_services</span>
+</div>
+<div>
+<h4 class="font-bold mb-2">Class B Autoclave</h4>
+<p class="text-on-surface-variant text-sm">Every instrument undergoes vacuum sterilization processes matching surgical hospital standards.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="airpurifier_gen">air_purifier_gen</span>
+</div>
+<div>
+<h4 class="font-bold mb-2">HEPA Air Filtration</h4>
+<p class="text-on-surface-variant text-sm">Constant clinical air purification ensuring a sterile environment and zero cross-contamination.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<img class="rounded-2xl shadow-lg" data-alt="Close up of sterilized dental instruments in a blue sealed package on a white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtrH-clLXYxdrcSt1f9pP_it7IqA2Yl5bSEyXmSkZ5wyV2rhS_usgBXOqKViSJ6060NoU10K8biVJ9vD-VIhQ8KbwQ2FsLKCy20acvKx1Y0tyKdM4_MSQLqjHsEnO3Xqf8N0UbnLDdMr5d460ek_Ruavzt05DrXknuTW61hEzrYyZK-KZ4smvNic3eys9F83_zIZI3ns9GqOAibJVdYwkenN7RglfWgy2gAJF908ISxw0Z7ofUjr3qVf7Fue0jg6C2IcJIbaDO0L4"/>
+<img class="rounded-2xl shadow-lg mt-8" data-alt="A dentist wearing full protective gear including mask and shield in a sterile clinical room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQv0OkX-1SmfxE7vtFdJpRDCe_DDP18KRGsT-T4x3fVlZ6yV8lXUn3HnYAAwCaCQTLilyVHorYtpm2ZB__sIhyvib5rArFb8l8WSkJ3uG93IwjxNJ6Hfqf3JMrqPXtvW0hw-cvvm_m2VBBoKJzPSXYceWy6v0g6XPDWqFJrxOaqaP79cmf4TvhcIjmr11dEiAEMMg31zSzGYSIivnRwhOicY2dbFWGyUuGUabIPE5ukbLKUgIenE-kwNue6LQwXc7yG5clJMNoJok"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-5xl mx-auto px-6 my-24">
+<div class="bg-gradient-to-br from-primary to-primary-container rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<h2 class="text-3xl md:text-5xl font-headline font-extrabold text-white mb-8">Ready for your magic smile?</h2>
+<p class="text-on-primary-container text-lg mb-12 max-w-2xl mx-auto">
+                    Experience the future of dentistry. Schedule your consultation with Gurugram's top experts today.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-10 py-4 rounded-full font-headline font-extrabold shadow-lg hover:scale-105 transition-transform">
+                        Book Your Visit
+                    </button>
+<button class="bg-transparent border border-white/30 text-white px-10 py-4 rounded-full font-headline font-extrabold hover:bg-white/10 transition-all">
+                        Contact Support
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100 font-headline mb-4">Magical 32</div>
+<p class="text-slate-500 dark:text-slate-400 font-body leading-relaxed text-sm">
+                    Luxury dental care and specialized treatments in the heart of Gurugram. Your comfort is our clinical priority.
+                </p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300 mb-4">Clinic</h4>
+<ul class="space-y-3 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">Patient Care</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">Expertise</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300 mb-4">Support</h4>
+<ul class="space-y-3 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">Emergency Contact</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-blue-600 transition-opacity" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300 mb-4">Location</h4>
+<div class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                    Sector 45, Near Huda City Center,<br/>Gurugram, Haryana 122003
+                </div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-blue-600" data-icon="phone_in_talk">phone_in_talk</span>
+<span class="text-sm font-bold text-blue-900 dark:text-blue-100">+91 98765 43210</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-100 dark:border-slate-900 text-center">
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm">© 2024 Magical 32 Dental Clinic Gurugram. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
